@@ -1,0 +1,14 @@
+{
+    "file_options" : [
+        "html/column/article/**",
+        "!html/test/**",
+        "!html/**/___*"
+    ] ,
+    "ftp_options" : {
+      "host"      : "153.120.180.30",
+      "port"      : 22,
+      "user"      : "cardlab",
+      "pass"      : "Lkd7rujtng",
+      "remotePath": "/column/article"
+    }
+}

@@ -1,0 +1,82 @@
+doctype html
+-var title="ページタイトル"
+-var number="◯◯"
+-var frontnumber=number-1
+-var nextnumber=number+1
+-var description="◯◯"
+-var keywords="◯◯"
+
+html(lang="ja")
+
+
+  head
+    meta(http-equiv="Content-Type" content="text/html; charset=Shift-JIS")
+    meta(http-equiv="Content-Script-Type" content="text/javascript")
+    meta(http-equiv="Content-Style-Type" content="text/css")
+    meta(property="fb:admins" content="100004671073773")
+    meta(name="description" content=description)
+    meta(name="keywords" content=keywords+",作り方,おすすめ,検索,比較")
+    title #{title} | クレジットカード研究Lab
+    link(rel="stylesheet" type="text/css" href="/css/common.css")
+    link(rel="shortcut icon" href="/images/favicon.ico")
+    link(rel="alternate" media="only screen and (max-width: 640px)" href="http://card-lab.com/sp/column/article/article"+number+".html")
+    script(type="text/javascript" src="/js/common.js")
+
+    body#pageTop
+      //#include virtual="/header.html"
+      div.pan
+        ul
+          li(itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb")
+            a(href="http://card-lab.com/" itemprop="url")
+              span(itemprop="title") HOME
+          li(itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb") &nbsp;&gt;&nbsp;#{title}
+
+      div#column
+        div#mainArea
+          h1.ttA.u_space_10(style="font-size:15px;") #{title}
+
+          h2.stA
+          div.discriptionA.u_space_20
+
+          h2.stA
+          div.discriptionA.u_space_20
+
+          //#include virtual="/foot_social.html"
+
+          div.pageNavi
+            a(href="/column/article/"+frontnumber+".html") ＜前のコラムへ
+            a(href="/column/article/"+nextnumber+".html") 次のコラムへ＞
+
+          p.prev_r.u_space_20
+            a(href="/column/2012") 全コラム一覧
+          h3.stB このコラムに関連するコンテンツ
+          div.discriptionB.clearfix
+            ul.col_purpose_l(style="width:500px;")
+              li.column
+                a(href="/column/article/article△.html") ◯◯
+              li.column
+                a(href="/column/article/article△.html") ◯◯
+              li.column
+                a(href="/column/article/article△.html") ◯◯
+
+          //#include virtual="/category/menu/main_menu.html"
+
+        div#sideArea
+          //#include virtual="/pr/side_top.html"
+          //#include virtual="/sidemenu_sub/contents.html"
+          //#include virtual="/sidemenu_sub/column.html"
+          div.subnaviArea
+            //#include virtual="/sidemenu_sub/knowledge.html"
+            //#include virtual="/sidemenu_sub/list.html"
+            //#include virtual="/sidemenu_sub/osusume/osusume_speed.html"
+            //#include virtual="/sidemenu_sub/card.html"
+            //#include virtual="/sidemenu_sub/media.html"
+            //#include virtual="/sidemenu_sub/search.html"
+          script(type="text/javascript" src="/js/random_bottom.js")
+
+        div.pageScroll
+          a(href="#pageTop")
+            img(src="/images/page_scroll.gif" alt="ページの先頭へ" width="140" height="30" border="0")
+
+      //#include virtual="/footer.html"
+      //#include virtual="/tag/tag01.html"

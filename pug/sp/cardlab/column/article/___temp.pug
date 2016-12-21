@@ -1,0 +1,69 @@
+doctype html
+-var title="タイトル"
+-var number="◯◯"
+-var frontnumber=number-1
+-var nextnumber=number+1
+-var description="◯◯"
+-var keywords="◯◯"
+
+
+//if (IE 8)&!(IEMobile)
+  html.no-js.lt-ie9(lang="ja", itemscope="", itemtype="http://schema.org/WebSite", prefix="og: http://ogp.me/ns#")
+// [if gt IE 8] <!
+html.no-js(lang="ja", itemscope="", itemtype="http://schema.org/WebSite", prefix="og: http://ogp.me/ns#")
+  // <![endif]
+  head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#")
+
+    include include/___head.pug
+
+    link(rel="canonical", href="http://card-lab.com/gucolumn/article/article"+number+".html")
+    link(rel="stylesheet", href="/sp/assets/css/style.css", type="text/css", media="screen")
+    meta(name="description", content=description)
+    meta(name="keywords", content=keywords)
+    title  #{title} | クレジットカード研究Lab
+  body.parts
+    .container
+      //#include virtual="/sp/header.html"
+      .s.s1
+        section
+          .s1--inner
+            .breadcrumb
+              a.home(href="index.html")
+                i.fa.fa-home
+              span.current #{title}
+            .midasi.midashi--dai--a
+              h2 #{title}
+            //#include virtual="/sp/foot_social.html"
+            <br />
+            div.midasi.midashi--chu--a: h2
+            div.wrap-block.mojisoushoku
+
+            include include/___close_orico.pug
+
+            <br />
+            <br />
+            //#include virtual="/sp/foot_social.html"
+            <br />
+            .wrap--block
+            <br />
+            .s.s3
+              section
+                .s3--inner
+                  .wrap--block
+                    .dialog--normal
+                      dl
+                        dt このコラムに関連するコンテンツ
+                        dd
+                          ul.list--normal
+                            li.column: a(href="/sp/column/article/article043.html")
+                             i
+                             |■■
+                            li.column: a(href="/sp/column/article/article043.html")
+                             i
+                             |■■
+                            li.column: a(href="/sp/column/article/article043.html")
+                             i
+                             |■■
+
+      include include/___foot1.pug
+    include include/___foot2.pug

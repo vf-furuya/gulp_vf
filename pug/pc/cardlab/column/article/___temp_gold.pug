@@ -1,0 +1,95 @@
+doctype html
+-var title="ページタイトル"
+-var number="◯◯"
+-var frontnumber=number-1
+-var nextnumber=number+1
+-var description="◯◯"
+
+html(lang='ja')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=Shift-JIS')
+    meta(http-equiv='Content-Script-Type', content='text/javascript')
+    meta(http-equiv='Content-Style-Type', content='text/css')
+    meta(name='description', content=description)
+    meta(name='keywords', content='アメックスカード,ゴールドカード,比較,おすすめ,検索,ビジネスカード,ステータスカード,プラチナカード')
+    title #{title} | ゴールドカード研究Lab
+    link(rel='stylesheet', type='text/css', href='/css/common.css')
+    link(rel='stylesheet', type='text/css', href='/css/gold.css')
+    link(rel='shortcut icon', href='/images/favicon.ico')
+    link(rel="alternate" media="only screen and (max-width: 640px)" href="http://card-lab.com/sp/column/article/article"+number+".html")
+    script(type='text/javascript', src='/js/common.js')
+
+  body#pageTop
+    //#include virtual="/goldcard/header.html"
+    .pan
+      ul
+        li(itemscope='itemscope', itemtype='http://data-vocabulary.org/Breadcrumb')
+          a(href='http://card-lab.com/goldcard/', itemprop='url')
+            span(itemprop='title') HOME
+        li(itemscope='itemscope', itemtype='http://data-vocabulary.org/Breadcrumb')
+          | > 
+          a(href='http://card-lab.com/category/gold.html', itemprop='url')
+            span(itemprop='title') ゴールドカードを選ぶ3つの基準
+        li(itemscope='itemscope', itemtype='http://data-vocabulary.org/Breadcrumb')
+          | > 
+          span(itemprop='title') #{title}
+
+    #column
+      #mainArea
+        //#include virtual="/foot_social.html"
+        br
+        h1.hl #{title}
+        .discription_gold.clearfix
+
+
+        h2.sub_hl
+        .discription_gold.clearfix
+
+        h2.sub_hl
+        .discription_gold.clearfix
+
+        h2.sub_hl
+        .discription_gold.clearfix
+
+        h2.sub_hl
+        .discription_gold.clearfix
+
+        .pageNavi
+          a(href="/column/article/article"+frontnumber+".html") ＜前のコラムへ
+          a(href="/column/article/article"+nextnumber+".html") 次のコラムへ＞
+        p.prev_r.u_space_20
+          a(href='/column/2012') 全コラム一覧
+        h3.stB このコラムに関連するコンテンツ
+        .discriptionB.clearfix
+          ul.col_purpose_l(style='width:500px;')
+            li.column
+              a(href='/column/article/article△△.html') ◯◯
+            li.column
+              a(href='/column/article/article△△.html') ◯◯
+            li.column
+              a(href='/column/article/article△△.html') ◯◯
+            li.column
+              a(href='/column/article/article△△.html') ◯◯
+            li.column
+              a(href='/column/article/article△△.html') ◯◯
+
+        //#include virtual="/category/menu/main_menu.html"
+        // /div.mainArea
+      #sideArea
+        //#include virtual="/pr/side_top.html"
+        //#include virtual="/goldcard/sidemenu_sub/contents.html"
+        //#include virtual="/goldcard/sidemenu_sub/column.html"
+        .subnaviArea.u_space_10
+          //#include virtual="/goldcard/sidemenu_sub/knowledge.html"
+          //#include virtual="/goldcard/sidemenu_sub/list.html"
+          //#include virtual="/goldcard/sidemenu_sub/card.html"
+          //#include virtual="/sidemenu_sub/osusume/osusume_amex_stc.html"
+        script(type='text/javascript', src='/js/random_bottom.js')
+        // /div.sideArea
+      .pageScroll_gold
+        a(href='#pageTop')
+          img(src='/goldcard/image/page_scroll.gif', alt='ページの先頭へ', width='140', height='30', border='0')
+        // /div.pageScroll
+      // /div.column
+    //#include virtual="/goldcard/footer.html"
+    //#include virtual="/tag/tag01.html"

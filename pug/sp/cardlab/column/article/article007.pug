@@ -1,0 +1,776 @@
+doctype html
+-var title="当サイトが推奨するポイントがお得の３枚のクレジットカード"
+-var number="007"
+-var frontnumber=number-1
+-var nextnumber=number+1
+-var description="当サイトが推奨するポイントがお得の３枚のクレジットカード、交換先・利用先によって還元率は異なります。貯めたポイントをどのように使ってよいか分からない方は、どこで使うのかを決めてからポイントを貯めましょう。"
+-var keywords="当サイトが推奨するポイントがお得の３枚のクレジットカード,クレジットカード,おすすめ,検索,比較"
+
+
+//if (IE 8)&!(IEMobile)
+  html.no-js.lt-ie9(lang="ja", itemscope="", itemtype="http://schema.org/WebSite", prefix="og: http://ogp.me/ns#")
+// [if gt IE 8] <!
+html.no-js(lang="ja", itemscope="", itemtype="http://schema.org/WebSite", prefix="og: http://ogp.me/ns#")
+  // <![endif]
+  head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#")
+
+    include include/___head.pug
+
+    link(rel="canonical", href="http://card-lab.com/gucolumn/article/article"+number+".html")
+    link(rel="stylesheet", href="/sp/assets/css/style.css", type="text/css", media="screen")
+    meta(name="description", content=description)
+    meta(name="keywords", content=keywords)
+    title  #{title} | クレジットカード研究Lab
+  body.parts
+    .container
+      //#include virtual="/sp/header.html"
+      .s.s1
+        section
+          .s1--inner
+            .breadcrumb
+              a.home(href="index.html")
+                i.fa.fa-home
+              span.current #{title}
+            .midasi.midashi--dai--a
+              h2 #{title}
+            //#include virtual="/sp/foot_social.html"
+            <br />
+            div.wrap-block.mojisoushoku
+              h3.sst_tokutyou ポイントサービスの種類を知ろう
+              p
+                | ポイントサービスにはたくさんの種類があります。
+                br
+              h4.sst ポイントサービス　一覧
+              table.normal(width='94%', border='0', cellpadding='5', cellspacing='1')
+                tr
+                  th(width='54%')
+                    h3#smcc-world
+                      img(src='/images/mitsui_column.gif', alt='', width='80', height='12', align='absmiddle')
+                      | 　三井住友カード ワールドプレゼント
+                  td(width='46%')
+                    div(align='center')
+                      img(src='/images/logo_world.gif', width='100', height='70')
+                tr
+                  th
+                    img(src='/images/logo_orico.png', alt='', width='47', height='62', align='absmiddle')
+                    | 　オリコカード　オリコポイント
+                  td
+                    div(align='center')
+                      img(src='/images/orico_point.png', width='120', height='36', vspace='10')
+                tr
+                  th
+                    img(src='/images/logo_mufg.gif', alt='', width='80', height='72', align='absmiddle')
+                    | 　MUFGカード　グローバルポイント
+                  td
+                    div(align='center')
+                      img(src='/images/mufgpoint.jpg', alt='', width='133', height='70', align='absmiddle')
+                tr
+                  th
+                    img(src='/images/life_logo.gif', alt='', width='80', height='80', align='absmiddle')
+                    | 　ライフカード　LIFEサンクスプレゼント
+                  td
+                    div(align='center')
+                      br
+                      img(src='/images/lifepoint_logo.gif', width='209', height='30')
+                tr
+                  th
+                    img(src='/images/logo_rakuten2.gif', alt='', width='80', height='28', align='absmiddle')
+                    | 　楽天カード　楽天ポイント
+                  td
+                    div(align='center')
+                      img(src='/images/logo_rakuten.gif', width='115', height='80')
+                tr
+                  th
+                    img(src='/images/logo_saison2.gif', alt='', width='80', height='52', align='absmiddle')
+                    | 　セゾンカード　永久不滅ポイント
+                  td
+                    div(align='center')
+                      img(src='/images/logo_saison3.gif', width='190', height='30')
+                tr
+                  th
+                    img(src='/images/logo_tsutaya.gif', alt='', width='80', height='12', align='absmiddle')
+                    | 　T-POINTカード　Tポイント
+                  td
+                    div(align='center')
+                      img(src='/images/logo_tsutaya.gif', alt='', width='195', height='31', align='absmiddle')
+                tr
+                  th
+                    img(src='/images/suica.png', alt='', width='80', height='59', align='absmiddle')
+                    | 　Suica　Suicaポイント
+                  td
+                    div(align='center')
+                      img(src='/images/logo_suicapoint_000.gif', alt='', width='153', height='50', align='absmiddle')
+                tr
+                  th
+                    img(src='/images/jcb_big.gif', alt='', width='80', height='60', align='absmiddle')
+                    | 　JCBカード　OkiDokiポイント
+                  td
+                    div(align='center')
+                      img(src='/images/okidoki.gif', width='100', height='64')
+              p
+                | 実際にポイントを貯めても、
+                br
+                br
+                span.blue
+                  strong ・貯めたポイントをどのように使ってよいか分からない・・・
+                  br
+                  strong ・貯めたポイントの種類が使いたいお店で使えなかった・・・
+                br
+                br
+                | という人は少なくありません。
+                br
+                br
+                | せっかく貯めたポイントも使い方を知らない、
+                br
+                | または間違ってしまうと、クレジットカードでポイントをお得に活用することが出来ません。
+                br
+                br
+                | ポイントを貯める前の最初の準備として、
+                br
+                br
+                strong.blue 【貯めたポイントを何で使うのか】
+                | といった出口戦略をしっかりと決めてからポイントを貯めていきましょう。
+            div.midasi.midashi--chu--a: h2 貯めたポイントをお得に使う、当サイト推奨の４つの出口戦略
+            div.wrap-block.mojisoushoku
+              p 貯めたポイントの効率的な使い方として、4つの方法を推奨しています。
+              h4.sst 日常でよく使う４つのポイントサービス・店舗
+              table.normal(width='94%', border='0', cellpadding='5', cellspacing='1')
+                tr
+                  th(width='33%')
+                    h3#smcc-world2
+                      font(size='+2') 【①】　
+                      div(align='center')
+                        img(src='/images/logo_waon.gif', alt='', width='115', height='111', align='absmiddle')
+                        br
+                        |         [WAON]
+                  td(width='67%')
+                    | イオン／マックスバリュ／スーパーセンター／イオンモール／イオンタウン／イオンショッピングセンター／まいばすけっと／ビブレ／メガマート／IFQ／マルエツ／イオンシネマ／ペトラス(ガソリンスタンド)
+                    br
+                    br
+                    |         ／ミニストップ／ファミリーマート／吉野家／マクドナルド／ビックカメラ／ヤマト運輸 直営店／七輪焼肉 安安／ココストア／武田メガネ／安楽亭　
+                    font(size='-2') など
+                tr
+                  th
+                    font(size='+2') 【②】　
+                    div(align='center')
+                      img(src='/images/logo_nanaco.gif', alt='', width='115', height='50', vspace='5', align='absmiddle')
+                      br
+                      |         [nanaco]
+                  td(width='67%')
+                    | セブンイレブン／デニーズ／イトーヨーカドー／そごう／ＳＥＩＢＵ／ヨークマート／ゴールウェイ／カラオケ館／ヤマト運輸／diskＵＮＩＯＮ／mod's hair／gran deco　
+                    font(size='-2') など
+                tr
+                  th
+                    font(size='+2') 【③】　
+                    div(align='center')
+                      img(src='/images/logo_rakuten.gif', width='115', height='80', align='absmiddle')
+                      br
+                      |         [楽天ポイント]
+                  td(width='67%')
+                    | 楽天市場／楽天トラベル／楽天ブックス／楽天オークション／楽天デリバリー／楽天銀行　
+                    font(size='-2') など
+                tr
+                  th
+                    font(size='+2') 【④】　
+                    div(align='center')
+                      img(src='/images/money_edy_icon_b.gif', alt='', width='45', height='44', vspace='10', align='absmiddle')
+                      img(src='/images/money_suica_icon_b.gif', alt='', width='55', height='33', align='absmiddle')
+                      img(src='/images/money_pasmo_icon_b.gif', alt='', width='52', height='33', align='absmiddle')
+                      br
+                      |         [Edy,Suica,PASMO]
+                  td(width='67%')
+                    | [Edy]
+                    br
+                    |         サークルK・サンクス／ファミリーマート／ローソン／セブンイレブン／デイリーヤマザキ／ミニストップ　
+                    font(size='-2') など
+                    br
+                    | [Suica,PASMO]
+                    br
+                    | KIOSK／イオン／スリーエフ／ファミリーマート／ブックオフ／ミニストップ／NEWDAYS／サークルK・サンクス／セブンイレブン／デイリーヤマザキ／ローソン／ガスト／ヤマト運輸　
+                    font(size='-2') など
+              dl.em-point
+                dt ポイント！
+                dd ■①・②の特徴
+                  br
+                  |     日本で生活している方なら一番使い勝手がよく、電子マネーとして貯めたポイントが少額であっても1円単位で無駄なく使えます。
+                  br
+                  br
+                  |   ■③
+                  br
+                  |     楽天市場で購入できないものはありません。
+                  br
+                  |     楽天ポイントは既に通貨と同様の価値があると思います。ただし、獲得したポイントが少額の場合、送料にお金がかかってしまうのがネックです。
+                  br
+                  |     年間で獲得出来るポイントが極端に多くなく小まめにポイントを利用したい方は①･②がお勧めです。
+                  br
+                  br
+                  |   ■④
+                  br
+                  |     Edy/Suicaも①・②同様に、電子マネーとして利用できるので使い勝手という点でお勧めです。
+            br
+            br
+            div.midasi.midashi--chu--a: h2
+              strong.blue3 貯めたポイントを、使いたいポイントに交換する。
+            div.wrap-block.mojisoushoku
+              p
+                | 貯めたポイントと、使いたいポイント（出口戦略）は
+                strong 異なります。
+              h4.sst 貯めたポイント
+              table.normal(width='94%', border='0', cellpadding='5', cellspacing='1')
+                tr
+                  td(width='46%')
+                    div(align='center')
+                      strong 三井住友 ワールドプレゼント
+                      br
+                      img(src='/images/logo_world.gif', width='100', height='70')
+                  td(width='46%')
+                    div(align='center')
+                      strong オリコポイント
+                      br
+                      img(src='/images/orico_point.png', width='120', height='36', vspace='10')
+                tr
+                  td(width='46%')
+                    div(align='center')
+                      strong ライフカード　LIFEサンクスプレゼント
+                      br
+                      br
+                      img(src='/images/lifepoint_logo.gif', width='209', height='30')
+                  td(width='46%')
+                    div(align='center')
+                      strong 楽天カード　楽天ポイント
+                      br
+                      img(src='/images/logo_rakuten.gif', width='115', height='80')
+              div(align='center')
+                img(src='/images/yajirusi_point.gif')
+              h4.sst 使いたいポイント
+              table.normal(width='94%', border='0', cellpadding='5', cellspacing='1')
+                tr
+                  td(width='46%')
+                    div(align='center')
+                      strong WAON
+                      br
+                      img(src='/images/logo_waon.gif', alt='', width='115', height='111', align='absmiddle')
+                  td(width='46%')
+                    div(align='center')
+                      strong nanaco
+                      br
+                      br
+                      img(src='/images/logo_nanaco.gif', alt='', width='115', height='50', vspace='5', align='absmiddle')
+                tr
+                  td(width='46%')
+                    div(align='center')
+                      strong 楽天市場
+                      br
+                      img(src='/images/logo_rakuten.gif', width='115', height='80')
+                  td(width='46%')
+                    div(align='center')
+                      strong Edy・Suica・Pasmo
+                      br
+                      img(src='/images/money_edy_icon_b.gif', alt='', width='45', height='44', vspace='10', align='absmiddle')
+                      img(src='/images/money_suica_icon_b.gif', alt='', width='55', height='33', align='absmiddle')
+                      img(src='/images/money_pasmo_icon_b.gif', alt='', width='52', height='33', align='absmiddle')
+                tr
+                  td(colspan='2')
+                    div(align='center')
+                      strong ANA・JALマイル
+                      br
+                      span
+                        img(src='/images/ana_logo.jpg', width='132', height='43', align='absmiddle')
+                      span
+                        img(src='/images/jal_logo.jpg', width='96', height='58', align='absmiddle')
+              p
+                | 分かりやすい例で言うと、
+                br
+                span.blue 三井住友VISAカードで貯めたポイント（ワールドプレゼントポイント）
+                | を
+                span.blue セブンイレブン
+                | では
+                strong
+                  span.blue 使えません。
+                br
+                br
+                | セブンイレブンで使うには、
+                br
+                br
+                | 三井住友VISAカードで貯めた
+                span.blue ワールドプレゼントポイント
+                | を
+                br
+                span.blue nanacoポイント
+                | と
+                span.red
+                  strong 交換してから使う
+                | 必要があります。
+              h4.sst 交換例
+              table.normal(width='94%', border='0', cellpadding='5', cellspacing='1')
+                tr
+                  td(width='92%')
+                    div(align='center')
+                      p
+                        strong ワールドプレゼントポイント　（200ポイント）
+                        br
+                        img(src='/images/logo_world.gif', width='100', height='70')
+                        img(src='/images/point1.png', width='66', height='79', align='absmiddle')
+              div(align='center')
+                img(src='/images/yajirusi_point2.gif')
+              br
+              table.normal(width='94%', border='0', cellpadding='5', cellspacing='1')
+                tr
+                  td(width='92%')
+                    div(align='center')
+                      strong nanacoポイント　（600ポイント）
+                      br
+                      img(src='/images/logo_nanaco.gif', alt='', width='115', height='50', vspace='5', align='absmiddle')
+                      img(src='../../../images/point3.png', width='112', height='79', align='absmiddle')
+              p
+                | 注意点として、交換率は必ずしも同じではありません。
+                br
+                br
+                | 今回例に上げた、　
+                span.blue ワールドプレゼントポイント
+                | →
+                span.blue nanacoポイント
+                br
+                br
+                | への交換は
+                span.red
+                  strong 3倍
+                | となります。
+                |（ワールドプレゼント 1ポイント→nanaco 3ポイント）
+                br
+                br
+                | 貯めたポイントの使い先を間違ってしまうと、
+                br
+                | 結果的にカード利用料に対してのポイント還元率は下がってしまいます。
+              h4.sst 1年で10万円使った場合のポイント還元率
+              table.normal(width='94%', border='0', cellpadding='5', cellspacing='1')
+                tr
+                  th(width='33%')
+                    h3#smcc-world3 ポイントの種類
+                  th 利用額
+                  th
+                    | 使いたいポイント
+                    br
+                    | 出口戦略
+                  th 獲得ポイント
+                  th 還元率
+                tr
+                  th(rowspan='4')
+                    div(align='center')
+                      | 三井住友系カード
+                      br
+                      img(src='/images/logo_world.gif', width='100', height='70')
+                      br
+                      |           [ワールドプレゼント]
+                  td(rowspan='4')
+                    div(align='center')
+                      br
+                      br
+                      br
+                      |         \100,000
+                      br
+                  td
+                    span.yellow WAON
+                  td
+                    div(align='right')
+                      span.yellow 1000
+                      br
+                  td
+                    div(align='right')
+                      strong.yellow 1.0%
+                      br
+                tr
+                  td
+                    span.yellow 楽天ポイント
+                  td
+                    div(align='right')
+                      span.yellow 1000
+                      br
+                  td
+                    div(align='right')
+                      strong.yellow 1.0%
+                      br
+                tr
+                  td nanaco
+                  td
+                    div(align='right')
+                      | 600
+                      br
+                  td
+                    div(align='right')
+                      | 0.6%
+                      br
+                tr
+                  td Edy
+                  td
+                    div(align='right')
+                      | 600
+                      br
+                  td
+                    div(align='right')
+                      | 0.6%
+                      br
+                tr
+                  th(rowspan='3')
+                    div(align='center')
+                      | JCB系カード
+                      br
+                      img(src='/images/okidoki.gif', width='100', height='64', align='absmiddle')
+                      br
+                      |         [OkiDokiポイント]
+                  td(rowspan='3')
+                    div(align='center')
+                      br
+                      br
+                      br
+                      |         \100,000
+                      br
+                  td
+                    span.yellow nanaco
+                  td
+                    div(align='right')
+                      span.yellow 1000
+                      br
+                  td
+                    div(align='right')
+                      strong.yellow 1.0%
+                      br
+                tr
+                  td
+                    span.yellow 楽天ポイント
+                  td
+                    div(align='right')
+                      span.yellow 1000
+                      br
+                  td
+                    div(align='right')
+                      strong.yellow 1.0%
+                      br
+                tr
+                  td Edy
+                  td
+                    div(align='right')
+                      | 600
+                      br
+                  td
+                    div(align='right')
+                      | 0.6%
+                      br
+              p
+                | この表の重要な所は、貯めたポイントは同じでも、
+                br
+                span.blue 交換先（利用先）によって、還元率が異なる、
+                | というところです。
+            div.midasi.midashi--chu--a: h2 当サイト推奨のポイントが貯まりやすい３つのクレジットカード
+            div.wrap-block.mojisoushoku
+              p
+                | そもそも、ポイントが貯まりやすいカードとは、どういった特徴があるのでしょうか？
+                br
+                |     当サイトは、下記の特徴を元にオススメの３つのクレジットカードを紹介しています。
+                br
+                br
+                strong.blue ■決済利用額に対してポイントの還元率が１％以上のカード
+                br
+                br
+                | 100円使って1ポイント貯まるカードは、１％の還元率となります。
+                br
+                | 今日１％以上還元するクレジットカードは多くはありません。
+                br
+                br
+                br
+                strong.blue ■貯まったポイントの使い勝手が良いか？
+                br
+                br
+                | 還元率が良くても、使える場所がマイナーだったり、
+                br
+                | 交換できる商品券が近隣のデパートなどで使えない場合は、
+                br
+                | ポイントの還元率がいくら高くても価値がありません。
+                br
+                br
+                | 当サイトは貯めたポイントを手軽に使えるカードを推奨しています。
+                br
+              h4.sst お勧めの３つのカードはこれだ！
+              p 上記の特徴を踏まえ、クレジットカード研究Lab
+                br
+                |     はこのカードをオススメします！
+            div.wrap-block.mojisoushoku
+              p
+                strong
+                  | ■【オリコポイント】が貯まるオリコカード・ザ・ポイント
+                table.normal(width='94%', border='0', cellpadding='5', cellspacing='1')
+                  tr
+                    th(width='33%')
+                      h3#smcc-world5 ポイントの種類
+                    th カード名
+                    th
+                      | 使いたいポイント
+                      br
+                      |         出口戦略
+                    th 交換率
+                    th 還元率
+                  tr
+                    th(rowspan='4')
+                      div(align='center')
+                        img(src='/images/orico_point.png', width='120', height='36', vspace='10')
+                        br
+                        |         [オリコポイント]
+                    th(rowspan='4')
+                      div(align='center')
+                        img.card(src='/images/orico_point_70.gif', alt='オリコカード・ザ・ポイント', width='70', height='44', border='0')
+                        br
+                        a(href='/link/orico/the_point.html', target='_blank')
+                          | オリコカード・
+                          br
+                          | ザ・ポイント
+                        br
+                    td
+                      span.yellow nanaco
+                    td
+                      div(align='right')
+                        span.yellow 等価
+                        br
+                    td
+                      div(align='right')
+                        strong.yellow 1.0～3.0%
+                        br
+                  tr
+                    td
+                      span.yellow 楽天ポイント
+                    td
+                      div(align='right')
+                        span.yellow 等価
+                        br
+                    td
+                      div(align='right')
+                        strong.yellow 1.0～3.0%
+                        br
+                  tr
+                    td
+                      span.yellow iD
+                    td
+                      div(align='right')
+                        span.yellow 等価
+                        br
+                    td
+                      div(align='right')
+                        strong.yellow 1.0～3.0%
+                        br
+                  tr
+                    td
+                      span.yellow QUICPay
+                    td
+                      div(align='right')
+                        span.yellow 等価
+                        br
+                    td
+                      div(align='right')
+                        strong.yellow 1.0～3.0%
+                        br
+              dl.em-point
+                dt ポイント！
+                dd 当サイト推奨の電子マネーとしてポイントを利用するにはもってこいのカード。
+                    br
+                    span.blue
+                      | 還元率は通常１％、入会後6ヶ月は倍の2％となります。専用のショッピングモールなど使い方によっては
+                      strong.red ３％以上
+                      | で業界最高水準。
+                    br
+                    br
+                    |     ※電子マネーを2つ搭載していて、100円単位でポイントが貯まるのでスーパーやコンビニなどの普段使いでも逃さずポイントが貯まります。
+            div.wrap-block.mojisoushoku
+              p
+                strong ■【ワールドポイント】が貯まる三井住友VISAクラシックカード
+                table.normal(width='94%', border='0', cellpadding='5', cellspacing='1')
+                  tr
+                    th(width='33%')
+                      h3#smcc-world4 ポイントの種類
+                    th カード名
+                    th
+                      | 使いたいポイント
+                      br
+                      |               出口戦略
+                    th 交換率
+                    th 還元率
+                  tr
+                    th(rowspan='4')
+                      div(align='center')
+                        img(src='/images/logo_world.gif', width='100', height='70')
+                        br
+                        |               [ワールドプレゼント]
+                    th(rowspan='4')
+                      div(align='center')
+                        a(href='/link/mitsui/classic.html', target='_blank')
+                          img.card(src='/images/mitsui_classic_70.gif', alt='三井住友VISAカード', width='70', height='44', border='0', align='absmiddle')
+                        br
+                        a(href='/link/mitsui/classic.html', target='_blank') 三井住友VISAカード
+                        br
+                    td
+                      span.yellow WAON
+                    td
+                      div(align='right')
+                        span.yellow ５倍
+                        br
+                    td
+                      div(align='right')
+                        strong.yellow 1.0%
+                        br
+                  tr
+                    td
+                      span.yellow 楽天ポイント
+                    td
+                      div(align='right')
+                        span.yellow ５倍
+                        br
+                    td
+                      div(align='right')
+                        strong.yellow 1.0%
+                        br
+                  tr
+                    td nanaco
+                    td
+                      div(align='right')
+                        | ３倍
+                        br
+                    td
+                      div(align='right')
+                        | 0.6%
+                        br
+                  tr
+                    td Edy
+                    td
+                      div(align='right')
+                        | ３倍
+                        br
+                    td
+                      div(align='right')
+                        | 0.6%
+                        br
+              dl.em-point
+                dt ポイント！
+                dd 当サイト推奨の電子マネーとしてポイントを利用するにはもってこいのカード。
+                    br
+                    span.blue
+                      | WAONポイントであれば、還元率
+                      strong １％
+                      | で業界最高水準です。
+                    br
+                    | →
+                    a(href='/column/article/article017.html') 三井住友VISAカードを永久無料で使う方法
+                    br
+                    br
+                    | ※ちなみに、nanaco、Edyは0.6%の還元率で若干下がります。
+                    br
+                    | 年間で２０万円以上クレジットカードを利用しない方にオススメ。
+                br
+                br
+            div.wrap-block.mojisoushoku
+              p
+                strong ■【楽天ポイント】が貯まるライフカード
+                table.normal(width='94%', border='0', cellpadding='5', cellspacing='1')
+                  tr
+                    th(width='33%')
+                      h3#smcc-world6 ポイントの種類
+                    th カード名
+                    th
+                      | 使いたいポイント
+                      br
+                      |         出口戦略
+                    th 交換率
+                    th 還元率
+                  tr
+                    th
+                      div(align='center')
+                        img(src='/images/lifepoint_logo.gif', alt='', width='135', height='18')
+                        br
+                        |         [LIFEサンクスプレゼント]
+                    th
+                      div(align='center')
+                        a(href='/link/life/standard.html', target='_blank')
+                          img.card(src='/images/life_standard_70.gif', alt='ライフカード', width='70', height='44', border='0', align='absmiddle')
+                        br
+                        a(href='/link/life/standard.html', target='_blank') ライフカード
+                        br
+                    td
+                      span.yellow 楽天ポイント
+                    td
+                      div(align='right')
+                        span.yellow ５倍
+                        br
+                    td
+                      div(align='right')
+                        strong.yellow 1.0%
+                        br
+              dl.em-point
+                dt ポイント！
+                dd ライフカードは、nanaco、waonといった電子マネー系のポイント変更することは出来ません。
+                  br
+                  |     よって貯めたポイントの利用先は楽天ポイントとなります。
+                  br
+                  br
+                  |   「だったら最初から楽天カードを持ちたい」
+                  br
+                  |   と思う方もいるかもしれません。
+                  br
+                  br
+                  |   しかし、ライフカードは入会から1年間はポイント
+                  span.red 1.5倍
+                  | 、
+                  br
+                  |     翌年度も継続で
+                  span.red 1.5倍
+                  | 、もしくは
+                  span.red 2倍
+                  | となります。
+                  br
+                  br
+                  |   誕生月には
+                  span.red
+                    strong 5倍
+                  | のポイントになり、
+                  br
+                  |     年間利用額によってはスペシャルボーナスポイントが付与されたりなど。
+                  br
+                  br
+                  |   なので、とにかく貯まりやすいのがライフカード。
+                  br
+                  br
+                  |   楽天カードは年中、還元率１％なのに対して
+                  br
+                  |     ライフカードは誕生日月に関しては、
+                  span.red
+                    strong 2.5%
+                  | まで跳ね上がります。
+                  br
+                  br
+                  |   年間通じて決済額が比較的多い方にはオススメです。楽天市場で
+                  br
+                  |  購入できないものはないので獲得したポイントは通貨同様に扱えます。
+                  br
+                  br
+                  |   ※貯めたポイントを楽天市場で利用したい方、還元率の高いカードを利用したい方、また年間クレジットカードの利用額に強弱を付けれる方にはライフカードがおすすめです。
+
+            <br />
+            <br />
+            //#include virtual="/sp/foot_social.html"
+            <br />
+            .wrap--block
+            <br />
+            .s.s3
+              section
+                .s3--inner
+                  .wrap--block
+                    .dialog--normal
+                      dl
+                        dt このコラムに関連するコンテンツ
+                        dd
+                          ul.list--normal
+                            li.column: a(href="/sp/list/cate/point.html")
+                             i
+                             |ポイントが貯まる クレジットカード一覧
+                            li.column: a(href="/sp/category/point.html")
+                             i
+                             |ポイントが貯まる クレジットカードの選び方
+
+      include include/___foot1.pug
+    include include/___foot2.pug

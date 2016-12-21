@@ -1,0 +1,20 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+script(type="text/javascript").
+  var meta = document.createElement("meta");
+  var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  meta.setAttribute("name", "viewport");
+  if (navigator.userAgent.indexOf("Android") > 0) {
+  meta.setAttribute("content", "width=640, user-scalable=yes,target-densitydpi=device-dpi");
+  } else if( screen.width <= 320) {
+  meta.setAttribute("content", "width=640, user-scalable=yes,maximum-scale=0.5,initial-scale=0.5");
+  } else {
+  var viewwidth = 574 / width;
+  meta.setAttribute("content", "width=640, user-scalable=yes,minimum-scale="+viewwidth+",maximum-scale="+2.0+",initial-scale="+viewwidth);
+  }
+  document.getElementsByTagName("head")[0].appendChild(meta);
+noscript
+  meta(name="viewport", content="width=640, user-scalable=yes,target-densitydpi=device-dpi")
+//if IE
+  meta(equiv="imagetoolbar", content="no")
+script(type="text/javascript", src="/js/bunner.js")

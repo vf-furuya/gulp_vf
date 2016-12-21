@@ -1,0 +1,123 @@
+doctype html
+html(lang='ja')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=Shift-JIS')
+    meta(http-equiv='Content-Script-Type', content='text/javascript')
+    meta(http-equiv='Content-Style-Type', content='text/css')
+    meta(property='fb:admins', content='100004671073773')
+    meta(name='description', content='◯◯ 特別インタビュー敢行、クレジットカード研究Labは日本最大級のクレジットカード検索サイトです。常に新サービスを打ち出すクレカ業界で、共に進化をし続けています。最新情報を詰め込んだボリューム大のクレカLabで自分のベストカードを見つけてください。')
+    meta(name='keywords', content='◯◯ 特別インタビュー敢行,クレジットカード,おすすめ,検索,比較')
+    title ◯◯ 特別インタビュー敢行 | クレジットカード研究Lab
+    link(rel='stylesheet', type='text/css', href='/css/common.css')
+    link(rel='shortcut icon', href='/images/favicon.ico')
+    script(type='text/javascript', src='/js/common.js')
+    style(type='text/css').
+      .interview_abcdefg { background:url(/images/bg_interview_abcdefg.png) top left repeat-x; }
+      .interview_top_abcdefg{
+      width: 650px;
+      height: 604px;
+      margin: 0 0 10px 0;
+      padding: 0;
+      }
+  body#pageTop
+    //#include virtual="/header.html"
+    .pan
+      ul
+        li
+          a(href='http://card-lab.com/') HOME
+        li
+          | > 
+          a(href='/interview/') ピックアップインタビュー一覧
+        li  > ◯◯ 特別インタビュー敢行
+      // /div.pan
+    #column
+      #mainArea
+        .interviewArea.u_space_10
+          .interview_top_abcdefg.interview_abcdefg
+          // セクション始まり
+          // セクション見出し開始
+          h3.section_title
+            img(src='/images/tt_interview_abcdefg_01.png', alt='ゴルフ一点型のお得なクレジットカード', width='650', height='114')
+          p.title_txt.blueArea_h
+            | ■■
+          // セクション見出し終了
+          .blueArea
+            .col
+              h4.sst
+              p: font(size='-1', color='#278BC0') ― ◯◯とはどんなクレジットカードなのですか？
+              p
+                img.picL(src='/images/tt_interview_abcdefg_007.jpg', alt='')
+              p: font(size='-1', color='#153695'): strong 難波氏：
+                |■■
+            // col終了
+            // 罫線
+            // ▼解決▼
+            .solution_blueArea
+              .kaiketsu_b
+                p
+                  | ■■
+            // ▲解決▲
+          br
+          // セクション終了
+          .solution_normalArea_end
+          .answer
+            h3.answer_title ■■
+            // 結論横
+            .answer_txt
+              p
+                | ■■
+              // 結論テキスト
+            .answer_txt
+              .picR
+                img(src='/images/tt_interview_abcdefg_019.jpg', alt='sample', width='245')
+                p.tantousha_name
+                  font(size='-2')
+                    | ■■
+                    br
+                    | ■■氏
+              // インタビュー者名
+              h5.answer_txtSp(style='font-size:12px;') ■■
+              // 誰々に聞きました！
+              p
+                | ■■
+            .answer_txt_b
+              p.anser_txtSpb
+                font(size='-1')
+                  strong ■■
+              p
+                | ■■
+            .toCard
+              a.answer_cardface2(href='http://www.golfdigest.co.jp/card/')
+                img(src='/images/interview_abcdefg_card.png', alt='abcdefgjapan', width='98', border='0', style='margin-left:20px;')
+              a.answer_cardlink(href='http://www.golfdigest.co.jp/card/') ◯◯お申込みはこちら→
+        //#include virtual="/foot_social.html"
+        h3.stB あわせてチェック　おすすめ記事
+        .discriptionB.clearfix
+          ul.col_purpose_l
+            li
+              a(href='/campain/index.cfm') 現在キャンペーン中のクレジットカード
+          ul.col_purpose_r
+            li.column
+              a(href='/category/kokyo.html') 公共料金でお得なクレジットカードの選び方
+        p.prev_r.u_space_20
+          a(href='/interview') インタビュー一覧に戻る
+        // /div.mainArea
+      #sideArea
+        //#include virtual="/pr/side_top.html"
+        //#include virtual="/sidemenu_sub/contents.html"
+        //#include virtual="/sidemenu_sub/column.html"
+        .subnaviArea
+          //#include virtual="/sidemenu_sub/knowledge.html"
+          //#include virtual="/sidemenu_sub/list.html"
+          //#include virtual="/sidemenu_sub/card.html"
+          //#include virtual="/sidemenu_sub/media.html"
+          //#include virtual="/sidemenu_sub/search.html"
+        script(type='text/javascript', src='/js/random_bottom.js')
+        // /div.sideArea
+      .pageScroll
+        a(href='#pageTop')
+          img(src='/images/page_scroll.gif', alt='ページの先頭へ', width='140', height='30', border='0')
+        // /div.pageScroll
+      // /div.column
+    //#include virtual="/footer.html"
+    //#include virtual="/tag/tag01.html"
